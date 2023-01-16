@@ -29,7 +29,7 @@ public class ItemController {
             result = new HashMap<>();
             result.put("data", data);
 //            return new ResponseEntity<>(request, HttpStatus.OK);
-            return ResponseEntity.ok(request);
+            return ResponseEntity.ok(result);
         } catch (Exception e) {
             result = new HashMap<>();
             result.put("message", e.getMessage());
